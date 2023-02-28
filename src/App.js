@@ -1,16 +1,26 @@
 import './App.css';
-import NavBar from './components/NavBar.js';
+import Button from './utils/Button.js';
+import Footer from './utils/Footer.js';
+import NavBar from './utils/NavBar.js';
 
 function App() {
   return (
-    <>
+    <div className="App">
       <NavBar />
-      <div className="App">
-        <header className="App-header">
+      <header className="App-header">
+        <div className="intro-container">
           <h2> BIENVENIDO A TIINIK</h2>
-        </header>
-      </div>
-    </>
+          <p>
+            TIINIK es una aplicación tipo Trivial social: los propios usuarios publican las
+            preguntas, y el sistema se encarga de ordenarlas por dificultad. Así puedes elegir
+            cualquier temática para jugar, con preguntas cada vez más difíciles.
+          </p>
+          <p>¡Pruébalo!</p>
+          <Button />
+        </div>
+      </header>
+      <Footer />
+    </div>
   );
 }
 
